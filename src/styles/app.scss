@@ -1,6 +1,73 @@
-@import 'utils/variables';
-@import 'components/type';
 
-.school-img {
-    width: 320px;
-}
+
+:root {
+    --color-text: #0a0a0a;
+    --color-text-secondary: #cd23e7;
+    --color-bg: #E9E6E4;
+    --color-bg-secondary:#cecece;
+  }
+  
+  [data-theme=light] {
+    --color-text: #0a0a0a;
+    --color-text-secondary: #cd23e7;
+    --color-bg: #E9E6E4;
+    --color-bg-secondary:#cecece;
+  }
+  
+  [data-theme=dark] {
+    --color-text: #f0f0f0;
+    --color-text-secondary: #cd23e7;
+    --color-bg: #0a0a0a;
+    --color-bg-secondary:#000000;
+  }
+  
+  
+  .infinite-slider {
+    font-family: "Inconsolata", monospace;
+    grid-area: a3;
+    background-color: var(--color-text);
+    border-bottom: solid 1px var(--color-text);
+    border-top: solid 1px var(--color-text);
+  }
+  
+  .marquee-horizontal {
+    color: var(--color-bg);
+    font-size: 24px;
+    font-weight: 400;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-animation: slider_k 15s linear infinite;
+            animation: slider_k 15s linear infinite;
+  }
+  
+  .marquee-horizontal:hover {
+    -webkit-animation: slider_k 50s linear infinite;
+            animation: slider_k 50s linear infinite;
+  }
+  
+  @-webkit-keyframes slider_k {
+    0% {
+      text-indent: 1em;
+    }
+    100% {
+      text-indent: -127.5em;
+    }
+  }
+  
+  @keyframes slider_k {
+    0% {
+      text-indent: 1em;
+    }
+    100% {
+      text-indent: -127.5em;
+    }
+  }
+  .infinite-slider:hover {
+    background-color: #ff0000;
+  }
+  
+  
