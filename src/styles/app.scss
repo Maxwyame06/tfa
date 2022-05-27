@@ -70,4 +70,46 @@
     background-color: #ff0000;
   }
   
-  
+  .section_cta{
+    padding:50px;
+    background-color:orange ;
+    margin-bottom:50px
+}
+.section_cta div{
+    display:flex;
+    justify-content:center
+}
+
+.section_cta div svg{
+    margin:0px 10px;
+    width:140px;
+    height:80px
+}
+@media screen and (min-width: 768px){
+    .section_cta div svg{
+        margin:0px 20px
+    }
+    .section_cta div{
+        justify-content:center
+    }
+}
+@media screen and (min-width: 1440px){
+    .section_cta div svg{
+        width:70%;
+        margin:0px
+    }
+    
+}
+html body{
+    margin:0px;
+}
+html .cta__btn:hover{
+    transform:scale(0.9);
+    transition:transform .5s ease;
+}
+html .header__section--off{
+    margin-bottom:0px
+}
+h1{
+    text-align: center;
+}
