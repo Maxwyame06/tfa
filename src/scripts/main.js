@@ -1,4 +1,5 @@
 import { gsap } from "gsap";
+
 function openNav() {
     document.getElementById("myNav").classList.toggle("menu_width");
     document
